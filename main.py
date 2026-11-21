@@ -1,47 +1,64 @@
 #!/usr/bin/env python3
-"""Write the 21 November 2026 world-news front page to /output/entry.png.
+"""Copy the pre-built entry image to the output directory.
 
-"Saturday 21 November 2026: the world in one image" — a premium
-one-page newspaper front page: a giant date masthead, a six-number KPI
-strip, three illustrated hero stories (the twin Peru earthquakes, the
-Saudi coalition intercepting three Houthi missiles over Riyadh, and
-COP31 going into overtime in Antalya), ten numbered briefing cards with
-CONFIRMED / REPORTED source tags, a real world map with numbered pins,
-three wire columns, and a DATE CHECK box that keeps 19/20 November
-news out of the day's stories. 35 stories across 7 regions, every one
-verified against Reuters, AP, AFP, Al Jazeera, BBC, USGS, Bloomberg,
-The Guardian, PTI, CNA, The West and AsiaToday.
+The image for the make.fun competition "Sum up 21 November's world
+news in one image" is already rendered and checked in as entry.png:
+a premium one-page newspaper front page, 1024x1024 PNG, summarising
+Saturday 21 November 2026.
 
-The picture itself is pre-built (1024x1024 PNG, 507,207 bytes, under
-the 1 MiB limit) and stored in this repository as entry.png; it was
-rendered in-session from page.html with a headless browser
-(see render.py, page.html, and the hero images). This program only
-copies it to the output directory, using nothing but the Python
-standard library, with no network and no randomness, so running it
-twice writes identical bytes.
+This script does nothing but place an exact copy of that file where
+the grading harness expects it, then prints the destination path and
+the SHA-256 of the written file so the harness can confirm the copy
+is intact. Standard library only, no network access, no randomness:
+running it twice writes byte-identical files.
+
+Output directory: the MAKEFUN_OUTPUT_DIR environment variable when
+it is set, otherwise a directory named "output" next to this script.
+The directory is created when it does not exist yet.
+
+Exit codes: 0 on success, 1 when entry.png is missing next to this
+script, 2 when the copy itself fails (for example the output
+directory cannot be created or written to).
 """
+
 import hashlib
 import os
-import pathlib
 import shutil
 import sys
 
-HERE = pathlib.Path(__file__).resolve().parent
-SOURCE = HERE / "entry.png"
-# The grader sets /output; a local run can point elsewhere instead.
-OUTDIR = pathlib.Path(os.environ.get("MAKEFUN_OUTPUT_DIR", "/output"))
-TARGET = OUTDIR / "entry.png"
+SOURCE_NAME = "entry.png"
 
 
-def main() -> int:
-    if not SOURCE.is_file():
-        print(f"entry image missing: {SOURCE}", file=sys.stderr)
+def main():
+    here = os.path.dirname(os.path.abspath(__file__))
+    source = os.path.join(here, SOURCE_NAME)
+
+    if not os.path.isfile(source):
+        print(f"error: {SOURCE_NAME} not found next to {__file__}", file=sys.stderr)
         return 1
-    OUTDIR.mkdir(parents=True, exist_ok=True)
-    shutil.copyfile(SOURCE, TARGET)
-    print(f"wrote {TARGET} sha256={hashlib.sha256(TARGET.read_bytes()).hexdigest()}")
+
+    out_dir = os.environ.get("MAKEFUN_OUTPUT_DIR") or os.path.join(here, "output")
+    try:
+        os.makedirs(out_dir, exist_ok=True)
+    except OSError as exc:
+        print(f"error: cannot create output directory {out_dir}: {exc}", file=sys.stderr)
+        return 2
+
+    dest = os.path.join(out_dir, SOURCE_NAME)
+    try:
+        shutil.copyfile(source, dest)
+    except OSError as exc:
+        print(f"error: cannot copy {source} to {dest}: {exc}", file=sys.stderr)
+        return 2
+
+    digest = hashlib.sha256()
+    with open(dest, "rb") as fh:
+        for chunk in iter(lambda: fh.read(1 << 20), b""):
+            digest.update(chunk)
+
+    print(f"wrote {dest} sha256={digest.hexdigest()}")
     return 0
 
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    sys.exit(main())
