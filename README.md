@@ -6,20 +6,20 @@ sum up the world's news of **Saturday 21 November 2026** in one image.
 
 ## The image
 
-A premium one-page newspaper front page, 1024×1024 PNG (507,207 bytes):
+A premium one-page newspaper front page, 1024×1024 PNG (510,349 bytes):
 
 - Giant date masthead — **Saturday 21 November 2026** — and a six-number
-  KPI strip (M6.9, 3 missiles, −5.28%, $7.25bn, 660 kg, 10.9%).
-- Three illustrated hero stories: the twin Peru earthquakes (M6.9 and
-  M6.7, USGS), the Saudi-led coalition intercepting three Houthi
-  ballistic missiles over Riyadh (Al Jazeera/AFP), and COP31 going into
-  overtime in Antalya with ~194 countries and no deal yet.
+  KPI strip (M6.7, 3 missiles, −5.28%, $7.25bn, 660 kg, 10.9%).
+- Three illustrated hero stories: a single reviewed M6.7 earthquake in
+  central Peru (USGS, 00:09 UTC), the Saudi-led coalition intercepting
+  three Houthi ballistic missiles over Riyadh (Al Jazeera/AFP), and COP31
+  going into overtime in Antalya with ~194 countries and no deal yet.
 - Ten numbered briefing cards, each with a **CONFIRMED** / **REPORTED**
   source tag (11 CONFIRMED, 2 REPORTED), a real world map with numbered
-  pins, three wire columns, and a DATE CHECK box that keeps 19/20
-  November news out of the day's stories.
-- **35 stories across 7 regions** (Americas 9, Europe 5, Asia 8,
-  Oceania 8, Middle East 2, Africa 2, Global 1), every one verified
+  pins, three wire columns, a THE DAY IN UTC timeline strip, and a DATE
+  CHECK box that keeps 19/20 November news out of the day's stories.
+- **35 stories across 7 regions** (Americas 10, Europe 7, Asia 7,
+  Oceania 4, Middle East 2, Africa 2, Global 3), every one verified
   against Reuters, AP, AFP, Al Jazeera, BBC, USGS, Bloomberg,
   The Guardian, PTI, CNA, The West and AsiaToday. See `stories.json`
   for the story list with sources.
@@ -32,7 +32,7 @@ randomness, so running it twice writes identical bytes:
 
 ```sh
 mkdir -p out && MAKEFUN_OUTPUT_DIR=out python3 main.py
-# wrote out/entry.png sha256=7b100ca024b707c24c016f91daeb8995c32331e904bddc6806c0bae490fec296
+# wrote out/entry.png sha256=24b13bf65d131c5dc6bf945506b8c3d1f222fb2c84523ff8d62f895f42f7097b
 ```
 
 ## How the image was built

@@ -1,4 +1,13 @@
 {
+  "added_in_v15": [
+    "BepiColombo Mercury orbit insertion 19:24 CET (ESA, Tier A)",
+    "UNSG veto: UK/France/China blocked UAE's Lana Nusseibeh (Guardian, Tier B)",
+    "EU pays Ukraine EUR 7.9bn (European Commission, Tier B)",
+    "Kryvyi Rih double-tap strike, 2 killed 42 injured (Kyiv Independent, Tier B)",
+    "NATO chief Rutte due in Warsaw Sat 21 Nov (SOFX/AP, Tier A)",
+    "THE DAY IN UTC timeline strip",
+    "Pin 8 leader line to New York; pin 5 moved Washington -> Johannesburg"
+  ],
   "added_in_v2": [
     "South Africa ANC coalition race (BBC)",
     "Nigeria Bayelsa boat capsizes, 4 killed (Al Jazeera, Tier B)",
@@ -19,14 +28,14 @@
       "tier": "B"
     },
     {
-      "deck": "Shenzhen trilateral, a possible tax on US firms building AI centres abroad, and nuclear-risk talks with China.",
-      "fact": "White House press conference on Shenzhen trilateral, possible tax on US firms building AI data centres overseas, China trilateral nuclear risk talks.",
-      "headline": "Trump turns briefing into 2028 audition",
+      "deck": "Down to 30.76% nationally, its worst result; four-party bloc with ActionSA, EFF and MK; councils must sit by 27 Nov.",
+      "fact": "ANC fell to 30.76% nationally, its worst municipal result (Reuters 8-9 Nov); nears four-party coalition deal with ActionSA, EFF and MK to sideline the DA in Johannesburg; councils must sit by 27 Nov; no deal signed as of 20 Nov.",
+      "headline": "ANC nears deal to sideline poll-topping DA",
       "n": 5,
-      "place": "Washington",
-      "region": "Americas",
-      "source": "The Guardian",
-      "status": "REPORTED",
+      "place": "Johannesburg",
+      "region": "Africa",
+      "source": "Reuters",
+      "status": "CONFIRMED",
       "tier": "B"
     },
     {
@@ -85,8 +94,8 @@
       "tier": "B"
     },
     {
-      "deck": "Legislative Council votes 01:36am Saturday to lift annual extraction from 12.5 MT to 16 MT.",
-      "fact": "Legislative Council voted 01:36am Saturday to raise annual extraction from 12.5 MT to 16 MT.",
+      "deck": "Legislative Council votes 01:36am Saturday to lift annual extraction from 12.5 MT to 16.5 MT.",
+      "fact": "Legislative Council voted 01:36am Saturday to raise annual extraction from 12.5 MT to 16.5 MT (+32%).",
       "headline": "NSW passes Mount Pleasant coalmine law",
       "n": 11,
       "place": "New South Wales",
@@ -120,9 +129,10 @@
   ],
   "date": "Saturday 21 November 2026",
   "date_check_excluded_20nov": [
+    "Shenzhen Trump-Xi-Putin summit (19 Nov)",
+    "Australia jobless 4.9% (19 Nov, ABS release)",
     "Cyclone Akvan landfall, 300,000 evacuated",
     "Kyiv bridges hit, 110+ missiles, 400+ drones, at least 9 killed",
-    "COP31 deadlock on final day",
     "EU-UK reset summit, youth scheme 100,000/year",
     "Trump defers Iran decision to 2027",
     "Asia markets, Nikkei -5.1%"
@@ -130,9 +140,9 @@
   "edition": "news-image-20261121",
   "heroes": [
     {
-      "deck": "M6.9 at 00:26 UTC, 22 km WNW of Ondores, 142 km deep; M6.7 at 00:09, 9 km NE of Carhuamayo, 108 km deep \u2014 both reviewed by USGS.",
-      "fact": "M6.9, 22km WNW of Ondores, 00:26 UTC, depth 142km; M6.7, 9km NE of Carhuamayo, 00:09 UTC, depth 108km. USGS reviewed both.",
-      "headline": "Twin quakes shake central Peru",
+      "deck": "One reviewed M6.7 quake, 9 km NE of Carhuamayo, 00:09 UTC, 108 km deep \u2014 the early M6.9 was the preliminary reading of the same tremor.",
+      "fact": "One reviewed M6.7 quake, 9 km NE of Carhuamayo, 21 Nov 00:09:19 UTC, depth 108 km (USGS us6000ucfm). The M6.9 near Ondores was the preliminary automated solution for the same tremor, revised 00:24 UTC.",
+      "headline": "M6.7 quake shakes central Peru",
       "n": 1,
       "place": "Peru",
       "region": "Americas",
@@ -152,8 +162,8 @@
       "tier": "A"
     },
     {
-      "deck": "~194 countries split as the draft drops the fossil-fuel phase-out and the $120bn-a-year target; a 3rd draft is due Saturday, the first COP text to admit warming passes 1.5\u00b0C.",
-      "fact": "~194 countries unable to agree; 3rd draft promised Saturday morning; draft drops fossil-fuel phase-out language and the $120bn/year adaptation target for 2035; first COP text admitting warming passes 1.5C.",
+      "deck": "~194 countries split as the draft drops the fossil-fuel phase-out and the $120bn-a-year target; a 3rd draft is due Saturday, the first COP text to acknowledge warming is projected to exceed 1.5\u00b0C.",
+      "fact": "~194 countries unable to agree; 3rd draft promised Saturday morning; draft drops fossil-fuel phase-out language and the $120bn/year adaptation target for 2035; first COP cover decision to explicitly acknowledge warming is projected to exceed 1.5C (Reuters 20 Nov, UN News).",
       "headline": "COP31 slips into overtime with no deal",
       "n": 3,
       "place": "Antalya",
@@ -164,7 +174,7 @@
     }
   ],
   "kpis": [
-    "M6.9 Peru twin quakes",
+    "M6.7 Peru quake",
     "3 missiles intercepted over Riyadh",
     "Nasdaq -5.28%",
     "$7.25bn Bayer settlement",
@@ -182,13 +192,19 @@
   ],
   "regions": {
     "Africa": 2,
-    "Americas": 9,
-    "Asia": 8,
-    "Europe": 5,
-    "Global": 1,
+    "Americas": 10,
+    "Asia": 7,
+    "Europe": 7,
+    "Global": 3,
     "Middle East": 2,
-    "Oceania": 8
+    "Oceania": 4
   },
+  "removed_in_v15": [
+    "Card 5 Trump/Shenzhen (19 Nov trap) -> moved to wire; card 5 now Johannesburg ANC coalition (Reuters)",
+    "Wire Canberra jobless 4.9% (ABS release 19 Nov) -> moved to DATE CHECK",
+    "Wire Oceania filler: Victorian Greens injunction, NSW holiday-park death, Jay Chou/Robyn concerts, AFLW/F1 previews",
+    "DATE CHECK: COP31 final-day deadlock removed (clashed with hero 3 overtime)"
+  ],
   "removed_in_v2": [
     "World Television Day + World Fisheries Day (trivial observance)",
     "Masarova beats Samson LP Open (weakest Europe sport)",
@@ -198,18 +214,19 @@
   "tier_note": "Tier A = first reported / event on 21 Nov 2026 (UTC or local). Tier B = Friday 20 Nov evening events published in 21 Nov morning editions, as v1.3/v1.6 did in practice; flagged here, not presented as verified 21 Nov first-reports in this file. ANC is framed only as the 21 Nov coalition race, never as a new election.",
   "total_stories": 35,
   "v14_note": "TRUE v1.4 per Seti's 2nd correction: 'cerita lebih lengkap' = deeper content per card, NOT more stories. Count stays 35 (13 numbered + 22 wire). All 13 numbered decks deepened with verified facts from the already-used sources (USGS, Al Jazeera, Reuters, AP, PTI, The Guardian, The West, CNA, AsiaToday); no new numbers or claims invented. CONFIRMED/REPORTED tags added; footer carries the collective source line. The 48-story build is abandoned (page-v1.4-48-abandoned.html).",
+  "v15_note": "v1.5: Peru twin-quakes error fixed (single reviewed M6.7, USGS us6000ucfm); card 5 Trump/Shenzhen replaced by Johannesburg ANC coalition (Africa gets first card+pin); Canberra 19 Nov item removed; Oceania filler purged (8->4 stories); card 4 chart flipped down; cards 4-13 visuals upgraded to editorial micro-graphics; column 3 shortened; topbar softened; footer adds 'in at least one time zone'; BepiColombo time corrected to 19:24 CET (ESA Operations; 23:24 CET is wrong, incl. in rank-1 entry); Swiatek WTA Finals win NOT used (champion was Mirra Andreeva; Swiatek missed the event); Poland missiles / EU-UK summit / Bekaa strikes NOT used as wires (classified date traps / DATE CHECK items); Pentagon land-ban NOT used (Senate bill, not a Pentagon halt). Count stays 35 (13 numbered + 22 wire).",
   "wire": [
     {
       "place": "Bilbao",
       "region": "Europe",
       "text": "Espanyol beat Athletic Bilbao 1-0.",
-      "tier": "A"
+      "tier": "B"
     },
     {
       "place": "Munich",
       "region": "Europe",
       "text": "Bayern held 1-1 by Koln.",
-      "tier": "A"
+      "tier": "B"
     },
     {
       "place": "Turin",
@@ -218,10 +235,32 @@
       "tier": "B"
     },
     {
-      "place": "Washington",
+      "place": "Warsaw",
       "region": "Europe",
-      "text": "Trump wants Ukraine peace deal by early January, FT reports.",
+      "source": "SOFX / AP, 20-21 Nov 2026",
+      "text": "NATO chief Rutte due in Warsaw today; Poland seeks more Eastern Sentry forces.",
+      "tier": "A"
+    },
+    {
+      "place": "Kryvyi Rih",
+      "region": "Europe",
+      "source": "Kyiv Independent / Ukrinform, 20 Nov 2026",
+      "text": "Russian missiles kill 2, injure 42 in double-tap strike on city centre.",
       "tier": "B"
+    },
+    {
+      "place": "Bayelsa",
+      "region": "Africa",
+      "source": "Al Jazeera, 20 Nov 23:36",
+      "text": "Boat carrying mourners to a funeral capsized Friday after mechanical failure; at least 4 killed, including 2 adults and 2 children.",
+      "tier": "B"
+    },
+    {
+      "place": "Baghdad",
+      "region": "Middle East",
+      "source": "Al Jazeera, 21 Nov 2026",
+      "text": "Iraqi forces deploy to Jurf al-Sakhar, south of Baghdad, to assert state control in a longtime Kataib Hezbollah stronghold.",
+      "tier": "A"
     },
     {
       "place": "New Delhi",
@@ -261,33 +300,29 @@
       "tier": "B"
     },
     {
-      "place": "Melbourne",
-      "region": "Oceania",
-      "text": "Victorian Greens seek injunction over how-to-vote cards mimicking Greens branding.",
-      "tier": "A"
-    },
-    {
-      "place": "New South Wales",
-      "region": "Oceania",
-      "text": "3-year-old boy killed after being hit by a car at a holiday park.",
-      "tier": "A"
-    },
-    {
-      "place": "Sydney",
-      "region": "Oceania",
-      "text": "Jay Chou plays ENGIE Stadium tonight; Robyn plays Sydney tonight.",
-      "tier": "A"
-    },
-    {
-      "place": "Melbourne",
-      "region": "Oceania",
-      "text": "AFLW preliminary finals today; F1 Las Vegas GP qualifying today.",
+      "place": "Mercury",
+      "region": "Global",
+      "source": "ESA Operations, 20 Nov 2026",
+      "text": "BepiColombo fires thrusters at 19:24 CET to enter Mercury orbit after 8 years, nearly 10bn km.",
       "tier": "A"
     },
     {
       "place": "Sydney",
       "region": "Oceania",
       "text": "David Jones tells 1,689 staff their jobs end 30 Dec; 19 of 38 stores to close.",
+      "tier": "B"
+    },
+    {
+      "place": "Washington",
+      "region": "Americas",
+      "source": "Reuters / WSJ / AP, 20 Nov 2026",
+      "text": "Trump threatens 'tremendous penalties' for US firms building data centres abroad.",
+      "tier": "B"
+    },
+    {
+      "place": "Washington",
+      "region": "Americas",
+      "text": "Trump wants Ukraine peace deal by early January, FT reports.",
       "tier": "B"
     },
     {
@@ -303,38 +338,24 @@
       "tier": "B"
     },
     {
-      "place": "Johannesburg",
-      "region": "Africa",
-      "source": "BBC (also Al Jazeera: ANC worst-ever local result, ~30%)",
-      "text": "ANC, down to 30.76% nationally (3,246 of 10,526 seats, from 45.59% in 2021), nears coalition deal with ActionSA, EFF and MK sidelining the DA (35% in Johannesburg vs ANC 20%); parties have until 27 Nov to form local governments.",
-      "tier": "A"
-    },
-    {
-      "place": "Bayelsa",
-      "region": "Africa",
-      "source": "Al Jazeera, 20 Nov 23:36",
-      "text": "Boat carrying mourners to a funeral capsized Friday after mechanical failure; at least 4 killed, including 2 adults and 2 children.",
-      "tier": "B"
-    },
-    {
-      "place": "Baghdad",
-      "region": "Middle East",
-      "source": "Al Jazeera, 21 Nov 2026",
-      "text": "Iraqi forces deploy to Jurf al-Sakhar, south of Baghdad, to assert state control in a longtime Kataib Hezbollah stronghold.",
-      "tier": "A"
-    },
-    {
-      "place": "Canberra",
-      "region": "Asia",
-      "source": "Bloomberg, 21 Nov 2026 (Bloomberg Asia Trade)",
-      "text": "Australia jobless rate rises to 4.9% in October, highest in five years.",
-      "tier": "A"
-    },
-    {
       "place": "New York",
       "region": "Americas",
       "source": "Bloomberg / Stocktwits, 21 Nov 2026",
       "text": "Anthropic falls 8.5% in its second trading session after its $107.3bn IPO (priced $83, opened $111.50 on 19 Nov, now ~$97) as the tech selloff continues.",
+      "tier": "B"
+    },
+    {
+      "place": "Brussels",
+      "region": "Europe",
+      "source": "European Commission, 20 Nov 2026",
+      "text": "EU pays Ukraine EUR 7.9bn, largest single Ukraine Facility disbursement.",
+      "tier": "B"
+    },
+    {
+      "place": "New York",
+      "region": "Global",
+      "source": "The Guardian, 20 Nov 2026 22:54 UTC",
+      "text": "UK, France and China believed to have blocked UAE's Lana Nusseibeh for UN chief in 9th straw poll.",
       "tier": "B"
     }
   ]
