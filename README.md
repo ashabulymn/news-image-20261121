@@ -10,35 +10,34 @@ sum up the world's news of **Saturday 21 November 2026** in one image.
 
 ## The image
 
-A collab front page, 1024×1024 PNG (471,955 bytes), built 300px-first:
-it combines the best of three designs — the giant date masthead, airy
-hero-led layout of the best-scoring 20 November entry; the KPI strip,
-DATE CHECK box, per-card source tags and real world map of the 21
-November entry; and the huge high-contrast banner labels of the
-21 November rank-1 entry.
+A premium one-page newspaper front page, 1024×1024 PNG (567,492 bytes):
 
-- Giant serif masthead — **Saturday 21 November 2026** (64px) — and a
-  six-number KPI strip (M6.7, 3 missiles, −5.28%, $7.25bn, 660 kg,
-  10.9%).
-- Three hero stories under banner labels that stay readable at 300px
-  (PERU: QUAKE 6.7, RIYADH: MISSILES, COP31: OVERTIME): a single
-  reviewed M6.7 earthquake in central Peru (USGS, 00:09 UTC), the
-  Saudi-led coalition intercepting three Houthi ballistic missiles
-  over Riyadh (Al Jazeera/AFP), and COP31 going into overtime in
-  Antalya with ~194 countries and no deal yet.
-- Ten numbered briefing cards, each with a coloured banner label
-  (20px bold white) and a **CONFIRMED** / **REPORTED** source tag,
-  a real world map with numbered pins, a numbered wire 14–35, a
-  THE DAY IN UTC timeline strip, and a DATE CHECK box that keeps
-  19/20 November news out of the day's stories.
-- **35 stories across 7 regions** (Americas 10, Europe 7, Asia 7,
-  Oceania 4, Middle East 2, Africa 2, Global 3), every one verified
+- Giant date masthead — **Saturday 21 November 2026** — and a six-number
+  KPI strip (M6.7, 3 missiles, −5.28%, 146 SAFE, 124\*, 660 kg).
+- Three illustrated hero stories, led by COP31 going into overtime in
+  Antalya with ~194 countries and no deal yet, then a single reviewed
+  M6.7 earthquake in central Peru (USGS, 00:09 UTC) and the Saudi-led
+  coalition intercepting three Houthi ballistic missiles over Riyadh
+  (Al Jazeera/AFP).
+- Ten numbered briefing cards, each with a **CONFIRMED** / **REPORTED**
+  source tag — including a Davao emergency landing after an engine-fire
+  warning with all 146 aboard safe (AP, ~00:08 PHT), KL Rahul's 124
+  not out at tea in Wellington (The Hindu), a new M6.8 quake off
+  Timor-Leste (USGS, 09:42 UTC — the day's biggest) and the Hartha
+  power station fire in Basra (Reuters, 4 killed, 30 hurt) — a real
+  world map with numbered pins, a wire column where every item carries
+  its source, and a DATE CHECK box that states plainly that all 30
+  stories are dated Saturday 21 November 2026 in at least one time zone.
+- The wire column includes the Gen Z cost-of-living protests continuing
+  across Europe on Saturday with an Italian transport strike (CNN), the
+  FBI probing a suspected hack of its national crime database (Reuters),
+  and North Melbourne beating Sydney 83–51 in Saturday's AFLW
+  preliminary final at Ikon Park (AFL).
+- **30 stories across 7 regions** (Americas 10, Europe 7, Asia 4,
+  Oceania 3, Middle East 3, Africa 1, Global 2), every one verified
   against Reuters, AP, AFP, Al Jazeera, BBC, USGS, Bloomberg,
-  The Guardian, PTI, CNA, The West and AsiaToday.
-
-At 300 pixels across, the date, the six KPI numbers, the three hero
-banners and headlines, and the ten card banners stay readable; the
-card body text, wire and map labels are full-size-only reading.
+  The Guardian, CNA, The West, AsiaToday, The Hindu, Cricbuzz,
+  Formula1.com, PIB, ATP, AFL, SOFX, CNN and ESA.
 
 ## How it runs
 
@@ -48,7 +47,7 @@ randomness, so running it twice writes identical bytes:
 
 ```sh
 mkdir -p out && MAKEFUN_OUTPUT_DIR=out python3 main.py
-# wrote out/entry.png sha256=be86a86efce6ee5f2e2ac0da77cefd94810e2f3075100b898760f2395fd9bb28
+# wrote out/entry.png (567492 bytes) sha256=f8ab7b9d08a173bc50f7adddd9e66bf84ed19c76386d26498a3ee5bfc0bf71de
 ```
 
 ## Prize
